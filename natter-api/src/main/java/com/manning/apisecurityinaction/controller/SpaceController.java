@@ -21,7 +21,7 @@ public class SpaceController {
     var json = new JSONObject(request.body());
     var spaceName = json.getString("name");
     if (spaceName.length() > 255) {
-      throw new IllegalArgumentException("space name too long");
+      throw new IllegalArgumentException("space name toooo long");
     }
     var owner = json.getString("owner");
     if (!owner.matches("[a-zA-Z][a-zA-Z0-9]{1,29}")) {
